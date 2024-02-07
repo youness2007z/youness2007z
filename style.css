@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+}
+body{
+    background: hsl(0, 0%, 50%);
+    color: black;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    background-image: url(images/youny.png) ;
+    background-size: cover;
+    background-position: center;
+}
+::content{
+    padding: 10px 10%;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.logo{
+    width: 140px;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+nav ul li a{
+    color: rgb(0, 0, 0);
+    text-decoration:wavy;
+    font-size: 19px;
+    background-color: #808080;
+    border-radius: 15px;
+    box-shadow: 6px 6px 1px rgb(66, 42, 42);
+    padding: 0%;
+}
+nav ul li a::after{
+    content: '';
+    width: 0%;
+    height:3px;
+    background: #0d1d0c;
+    position: absolute;
+    left:0;
+    bottom: -6px;
+    transition: 0,5s;
+}
+nav ul li a:hover::after{
+    width: 100%;
+
+}
+.header-text{
+    margin-top: 50%;
+    font-size: 60%;
+}
+.header-text h1 span{
+    color: aquamarine;
+}
+/*---------about---------*/
+#about{
+    padding: 80px 0;
+    color: black;
+}
+.about-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px;
+    background: linear-gradient(#808080,#FF5F15);
+  }
+  
+  .about-col-1 {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .about-col-2 {
+    flex: 1;
+    padding: 20px;
+  }
+
+  
+  #experience {
+    padding: 20px;
+  }
+  
+  .experience-container {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(#808080,#FF5F15);
+  }
+  
+  .experience-item {
+    margin-bottom: 20px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    background: linear-gradient(#FF5F15,#808080);
+  }
+.experience-container.experience-item h4 p{
+    font-size: 20px; 
+    border-top: 3px #000000 solid;
+    border-right: 5px #000000 solid;
+    border-bottom: 5px #000000 solid;
+    border-left: 5px #000000 solid;
+} 
+
+.profile-picture {
+  width: 150px; /* Adjust the width and height as needed */
+  max-width: fit-content;
+  max-width: 300px;
+  height: 160px;
+  border-radius: 90%; /* Makes the image round */
+  overflow: hidden; /* Clips the image to the rounded shape */
+}
+
+.profile-picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures the image covers the entire container */
+}
+
+  .certificate-container.profile-picture {
+    width: 200px; /* Adjust the width and height as needed */
+    height: 150px;
+    border-radius: 90%; /* Makes the image round */
+    overflow: hidden; /* Clips the image to the rounded shape */
+  }
+  
+  .profile-picture img {
+    width: 200%;
+    max-width: fit-content;
+    height: 110%;
+    object-fit: cover; /* Ensures the image covers the entire container */
+  }
+  
+  .experience-container profile-picture img {
+    width: 100%;
+    height: auto;
+    border: 6px solid #808080;
+    padding: 5px;
+    margin: 5px;
+  }
+  .experience-container.profile-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Ensures the image covers the entire container */
+    padding-right: 80px;
+    margin-right: 60px;
+  }
+  #certificates {
+    padding: 20px;
+  }
+  
+  .certificate-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    background: linear-gradient( #4682B4, #808080);
+  }
+  
+  .certificate-link {
+    width: 200px;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  
+  .certificate-link img {
+    width: 100%;
+    height: auto;
+  }
+  #hobbies {
+    padding: 20px;
+  }
+  
+  .hobbies-list {
+    list-style: none;
+    padding: 0;
+    background: linear-gradient(#808080 , #4682B4);
+  }
+  
+  .hobbies-list li {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+  }
+  #socials-contact {
+    padding: 20px;
+  }
+  
+  .social-links {
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to bottom, #FF5F15, #4682B4); /* Orange to pink gradient for the sky */
+    background: linear-gradient(to right, #808080, #36454F); /* Steel Blue to Teal gradient for the waves */
+ background: linear-gradient(to left,#FF5F15);
+  }
+  .social-link {
+    margin-bottom: 20px;
+  }
+  
+  .social-link a {
+    margin-bottom: 10px;
+    text-decoration: none;
+    color: #333;
+  }
+  .social-links image.small-round{
+    width: 50px; /* Adjust the size as needed */
+    height: 50px; /* Adjust the size as needed */
+    border-radius: 50%; /* Makes the image round */
+    margin-right: 10px; /* Adds space between the images */
+  }
+  
+  .hobbies-list img {
+    max-width: 150px; /* Adjust the size of the QR code as needed */
+  }
+  .images {
+    display: flex;
+    align-items: center;
+  }
+
+   /* Frame for each picture */
+.small-round {
+    border: 6px solid #FF5F15;
+    padding: 5px;
+    margin: 5px;
+  }
+/* Align the pictures horizontally */
+.social-links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+
+  
+
+
